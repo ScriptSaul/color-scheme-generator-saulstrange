@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="manifest" href="/manifest.json">
+    </head>
+
+    
+    
+    <body>
+        <header>
+        <h1><span id="color-title">Color</span> Scheme Generator</h1>
+        <div class="dark-mode-toggle">
+            <label for="dark-mode">Dark Mode:</label>
+            <input type="checkbox" id="dark-mode">
+        </header>
+
+        <main>
+            <div class="controls">
+                <input type="color" id="seed-color" class="seed-selector" name="seed-color">
+                <select name="color-schemes" class="scheme-selector" id="color-schemes">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="analogic">Analogic</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Analogic-complement</option>
+                    <option value="triad">Triad</option>
+                </select>
+                <button id="get-color" type="button">Get color scheme</button>
+            </div>
+
+            <div id="color-track">
+                <!-- Javascript insert -->
+            </div>
+            <div class="slider-container">
+
+                <div class="slider-labels">
+                    <span>Darker</span>
+                    <span>Lighter</span>
+                </div>
+
+                <div class="slider-control">
+                    <input type="range" id="color-slider" min="0" max="6" step="1" value="3">
+                    <span class="slider-symbol">&lt; | &gt;</span>
+                </div>
+
+            </div>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 1. create an input for the seed color -->
+
+<!-- 2. create a dropdown menu select box to choose the type of color scheme -->
+
+<!-- 3. create a listening event for button click that requests(fetches)data from api to get color scheme -->
+
+<!-- 4. display the requested color scheme on the page -->
+
+<!-- 5. Add feature to copy to clipboard when hex values when clicked -->
